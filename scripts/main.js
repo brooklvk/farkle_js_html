@@ -217,7 +217,10 @@ function calcRollScore() {
 
     let scoredDiceIndexes = [];
 
-    let scoredDice1s5s = [];
+    let scoredDice1s5s = {
+        ones: [],
+        fives: []
+    };
 
     // 4 of a kind 
     if (((dice[0] == dice[1]) && (dice[1] == dice[2]) && (dice[2] == dice[3]))  ||  ((dice[1] == dice[2]) && (dice[2] == dice[3]) && (dice[3] == dice[4]))  ||  ((dice[2] == dice[3]) && (dice[3] == dice[4]) && (dice[4] == dice[5]))) {
@@ -226,7 +229,17 @@ function calcRollScore() {
 
         if ((dice[0] == dice[1]) && (dice[1] == dice[2]) && (dice[2] == dice[3])) {
             scoredDiceIndexes = [0, 1, 2, 3];
-            
+            if (dice[4] == 1) {
+                scoredDice1s5s.ones.append(4);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[4] == 5) {
+                scoredDice1s5s.fives.append(4);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
         }
 
         else if ((dice[1] == dice[2]) && (dice[2] == dice[3]) && (dice[3] == dice[4])) {
@@ -420,10 +433,10 @@ function calcRollScore() {
 
     const scoreAndIndexes = {
         scoreObject: rollScore,
-        scoreIndexes: scoredDiceIndexes
+        scoreIndexes: scoredDiceIndexes, scoredDice1s5s
     };
 
-    return scoreAndIndexes; // An object {scoreObject: rollScore {result: score: }, scoreIndexes: scoredDiceIndexes []} 
+    return scoreAndIndexes; // An object {scoreObject: rollScore {result: score: }, scoreIndexes: scoredDiceIndexes [], scoredDice1s5s {ones: [], fives: []}} 
 }
 
 const scoreAndIndexes = calcRollScore();
