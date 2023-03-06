@@ -381,6 +381,24 @@ function calcRollScore() {
 
         else if (dice[2] == 6 && dice[3] == 6 && dice[4] == 6) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 6 && dice[4] == 6 && dice[5] == 6) {
@@ -439,6 +457,24 @@ function calcRollScore() {
 
         else if (dice[2] == 5 && dice[3] == 5 && dice[4] == 5) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 5 && dice[4] == 5 && dice[5] == 5) {
@@ -497,6 +533,24 @@ function calcRollScore() {
 
         else if (dice[2] == 4 && dice[3] == 4 && dice[4] == 4) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 4 && dice[4] == 4 && dice[5] == 4) {
@@ -555,6 +609,24 @@ function calcRollScore() {
 
         else if (dice[2] == 3 && dice[3] == 3 && dice[4] == 3) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 3 && dice[4] == 3 && dice[5] == 3) {
@@ -613,6 +685,24 @@ function calcRollScore() {
 
         else if (dice[2] == 1 && dice[3] == 1 && dice[4] == 1) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 1 && dice[4] == 1 && dice[5] == 1) {
@@ -671,6 +761,24 @@ function calcRollScore() {
 
         else if (dice[2] == 2 && dice[3] == 2 && dice[4] == 2) {
             scoredDiceIndexes = [2, 3, 4];
+            if (dice[0] == 1) {
+                scoredDice1s5s.ones.append(0);
+            }
+            if (dice[1] == 1) {
+                scoredDice1s5s.ones.append(1);
+            }
+            if (dice[5] == 1) {
+                scoredDice1s5s.ones.append(5);
+            }
+            if (dice[0] == 5) {
+                scoredDice1s5s.fives.append(0);
+            }
+            if (dice[1] == 5) {
+                scoredDice1s5s.fives.append(1);
+            }
+            if (dice[5] == 5) {
+                scoredDice1s5s.fives.append(5);
+            }
         }
 
         else if (dice[3] == 2 && dice[4] == 2 && dice[5] == 2) {
