@@ -1,0 +1,61 @@
+
+body {
+    font-family: 'Georgia', sans-serif;
+    font-size: large;
+}
+
+header p {
+    background-color: rgb(209, 175, 64);
+    color: black;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.six-dice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50%;
+    margin: 30px auto;
+}
+
+.dice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(171, 31, 31);
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+}
+
+div {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: rgb(40, 81, 142);
+    color: white;
+    font-family: 'Georgia', sans-serif;
+    font-size: medium;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 7px;
+}
+
+div p {
+    margin: 20px;
+}
+
+footer {
+    background-color: rgb(209, 175, 64);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
