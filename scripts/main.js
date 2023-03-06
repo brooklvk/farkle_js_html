@@ -7,10 +7,11 @@
 
 // I used objects and arrays as well as DOM manipulation in this project. 
 
-// The game does lack features like a continuing score that is added to every roll of the dice, 
-// as well as a way for the user to control which dice to set aside / keep rolling. 
-// The game also does not include single dice like 1s and 5s in the scoring.
-// I would have liked to add all of these features in but had to simplify it in the end. 
+// first, calc 1s and 5s in scoring. Then let the user choose to keep or roll them (ONLY IF NOT ALL DICE USED IN SCORING (ex. scoredDiceIndexes = less than 6 in array) before calculating 1/5s).
+// (Therefore, calc 1s and 5s in scoring AFTER done setting the variable scoredDiceIndexes. May have to complicate that variable in order to track indexes of 1/5s as well.)
+// Then (1) take all that info, and (2) set up a way to add the score as we go (USE lastRolled global var) to (3) add old roll score to new roll score AS LONG AS new roll score != 0. And display. 
+// Somewhere in there, add functions and buttons for user to choose which sets of dice to keep and which to roll and make them work. 
+
 
 const sixDice = document.querySelector(".six-dice");
 
@@ -214,7 +215,9 @@ function calcRollScore() {
         score: 0
     };
 
-    let scoredDiceIndexes = []
+    let scoredDiceIndexes = [];
+
+    let scoredDice1s5s = [];
 
     // 4 of a kind 
     if (((dice[0] == dice[1]) && (dice[1] == dice[2]) && (dice[2] == dice[3]))  ||  ((dice[1] == dice[2]) && (dice[2] == dice[3]) && (dice[3] == dice[4]))  ||  ((dice[2] == dice[3]) && (dice[3] == dice[4]) && (dice[4] == dice[5]))) {
@@ -223,6 +226,7 @@ function calcRollScore() {
 
         if ((dice[0] == dice[1]) && (dice[1] == dice[2]) && (dice[2] == dice[3])) {
             scoredDiceIndexes = [0, 1, 2, 3];
+            
         }
 
         else if ((dice[1] == dice[2]) && (dice[2] == dice[3]) && (dice[3] == dice[4])) {
