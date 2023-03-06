@@ -894,10 +894,48 @@ function calcRollScore() {
         }
     }
 
-    // Else: scored nothing 
+    // Else: scored 1s or 5s or nothing 
     else {
-        rollScore.result = "none";
-        rollScore.score = 0;
+        if (dice[0] == 1) {
+            scoredDice1s5s.ones.append(0);
+        }
+        if (dice[1] == 1) {
+            scoredDice1s5s.ones.append(1);
+        }
+        if (dice[2] == 1) {
+            scoredDice1s5s.ones.append(2);
+        }
+        if (dice[3] == 1) {
+            scoredDice1s5s.ones.append(3);
+        }
+        if (dice[4] == 1) {
+            scoredDice1s5s.ones.append(4);
+        }
+        if (dice[5] == 1) {
+            scoredDice1s5s.ones.append(5);
+        }
+        if (dice[0] == 5) {
+            scoredDice1s5s.fives.append(0);
+        }
+        if (dice[1] == 5) {
+            scoredDice1s5s.fives.append(1);
+        }
+        if (dice[2] == 5) {
+            scoredDice1s5s.fives.append(2);
+        }
+        if (dice[3] == 5) {
+            scoredDice1s5s.fives.append(3);
+        }
+        if (dice[4] == 5) {
+            scoredDice1s5s.fives.append(4);
+        }
+        if (dice[5] == 5) {
+            scoredDice1s5s.fives.append(5);
+        }
+        else {
+            rollScore.result = "none";
+            rollScore.score = 0;
+        }
     }
 
     const scoreAndIndexes = {
