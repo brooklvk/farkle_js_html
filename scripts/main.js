@@ -948,6 +948,11 @@ function calcRollScore() {
 
 const scoreAndIndexes = calcRollScore();
 let lastRolled = scoreAndIndexes.scoreObject;
+//code here to keep track of lastrolled and new roll??
+
+let indexRolled = scoreAndIndexes.scoreIndexes[0];
+let index1s5s = scoreAndIndexes.scoreIndexes[1];
+
 
 // Create an HTML p and put rollScore object in it from lastRolled variable
 // In HTML div .score 
