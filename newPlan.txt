@@ -1,0 +1,64 @@
+/************************
+Farkle Game 
+************************/
+
+/************************
+"Classes"
+************************/
+
+Die 
+------------------------ 
+- int value 
+------------------------ 
++ getValue() 
++ setValue() //random 
+
+
+Roll //collection of 6 dice
+------------------------ 
+- [] roll 
+- int rollScore 
+- string rollResult
+- string prompt 
+------------------------
++ getRoll() 
++ setRoll() //get 6 die values 
++ getRollScore() 
++ getRollResult()
+- setRollScore(roll) //can use sub-functions to calculate 
+- setRollResult(score)
++ getPrompt() 
+- setPrompt(rollScore) //if score is 0 prompt to accept score of 0 and start new turn, 
+        otherwise, prompt to either roll again or accept score of rollScore
+
+
+TurnScore //updates after each Roll
+-------------------------
+- int turnScore 
+-------------------------
++ getTurnScore()
+- setTurnScore(+= Roll.score, 0 if !Roll.score) 
+
+
+TotalScore //updates after each Turn 
+-------------------------
+- int totalScore 
+-------------------------
++ getTotalScore() //display??
+- setTotalScore(+= turnScore)
+
+
+/************************
+HTML objects
+************************/
+
+Die 
+Roll (6 Dice)
+Current Score (rollScore)
+Total Score (totalScore)
+Message (including rollResult and prompt)
+
+User Abilities:
+-- roll the dice 
+-- choose to roll again or accept score (0 or rollScore)
+-- 
